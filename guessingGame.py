@@ -1,5 +1,13 @@
+import random
+
 def main():
     player_guess()
+    x = generate_random_number()
+
+
+def generate_random_number():
+    secret_number = random.randint( 1,100 )
+    return(secret_number)
 
 def player_guess():
     guess = input("Pick a number between 1 and 100 ")
