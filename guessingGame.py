@@ -1,2 +1,2 @@
-def main(): 
-    
+#Test
+print('test')
