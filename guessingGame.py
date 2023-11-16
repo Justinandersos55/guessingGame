@@ -1,3 +1,10 @@
+
+def play_game():
+    
+    restart = input("NEW GAME? Y/N: ")
+    if restart == ("Y"):
+        main()
+
 import random
 
 def main():
