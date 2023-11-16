@@ -41,6 +41,7 @@ def give_feedback(secret_number, guess,attempts):
     if attempts <3:
             if guess == secret_number:
                 print("YOU GUESSED THE NUMBER! CONGRATS!")
+                play_game()
             if guess > secret_number:
                 print("Your guess is too high. \n" + str(3-attempts) + " ATTEMPTS REMAINING\n")
                 player_guess(secret_number,attempts)
@@ -49,6 +50,6 @@ def give_feedback(secret_number, guess,attempts):
                 player_guess(secret_number,attempts)
     if int(3-attempts) <= 0:
         print(str(secret_number)+ " WAS THE CORRECT ANSWER!\n")
-
+        play_game()
 if __name__ == "__main__":
     main()
